@@ -1,7 +1,7 @@
 <!-- Code injected by live-server -->
 <script type="text/javascript">
 	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
+	if (!window.localStorage.getItem('skipReload') && 'WebSocket' in window) {
 		(function() {
 			function refreshCSS() {
 				var sheets = [].slice.call(document.getElementsByTagName("link"));
